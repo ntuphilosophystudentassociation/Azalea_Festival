@@ -9,12 +9,17 @@
     margin: 2%;
     float: left; 
     text-align: center;
+    align-content: center;
 }
 
 .word-card:hover{
     background-color: #303030;
 }
 
+.word-card-title{
+    line-height: 200px;
+    pointer-events: none;
+}
 
 h4{
     margin: 2%;
