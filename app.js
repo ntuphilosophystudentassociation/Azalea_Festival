@@ -9,10 +9,6 @@ let pClickCount = 0;
 let pConClickCount = 0;
 let aClickCount = 0;
 let aConClickCount = 0;
-console.log(gameZone.clientHeight)
-
-aOutput.style.height = gameZone.clientHeight
-pOutput.style.height = gameZone.clientHeight
 
 gameZone.addEventListener('click', (e)=>{
     if (e.target.classList.contains('word-card')){
