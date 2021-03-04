@@ -1,23 +1,28 @@
-.question{
-    margin-bottom: 2%;
+html{
+    color: #453131;
 }
 
+h2{
+    font-size:2rem;
+}
 .word-card{
-    font-size: 12pt;
-    color: white;
-    background-color: #2879BE;
-    border: none;
-    border-radius: 12px;
+    font-size: 1rem;
+    color: #533939;
+    background-color: #FFBFBB;
+    border: white 10px solid;
+    border-color: white;
+    border-radius: 22px;
     vertical-align: top;
-    min-height:200px;
-    margin: 2%;
+    min-height:180px;
+    margin: 0;
     float: left; 
     text-align: center;
     align-content: center;
 }
 
 .word-card:hover{
-    background-color: #303030;
+    background-color: #DF9090;
+    color: rgb(255, 246, 246);
 }
 
 .word-card-title{
@@ -25,24 +30,26 @@
     pointer-events: none;
 }
 
-h4{
-    margin: 2%;
+.word-card-content h4{
+    margin: 16pt;
     padding: 0;
 }
-p{
-    margin: 5%;
+.word-card-content p{
+    margin: 16pt;
     padding: 0; 
+    word-break: break-all;
 }
 
 .word-card-content{
-    font-size: 12pt;
-    color: black;
-    background-color: #e3e3e3;
-    border-radius: 12px;
-    min-height:200px;
-    margin: 2%;
+    font-size: 1.1rem;
+    color: #312222;
+    background-color: #EDDDDD;
+    border: white 10px solid;
+    border-color: white;
+    border-radius: 22px;
+    min-height:180px;
     float: left;
-    text-align: center;
+    text-align: left;
 }
 
 .game-zone{
@@ -64,6 +71,7 @@ p{
 
 .output{
     margin: 0 auto;
+    margin-top: 3%;
     width:90%;
     max-width: 90%;
     text-align: center;
@@ -78,16 +86,12 @@ p{
     display: none;
 }
 
-/* .play-again{
-    font-size: 12pt;
-    color: black;
-    background-color: #2879BE;
-    border: none;
-    border-radius: 12px;
-    vertical-align: top;
-    min-height:200px;
-    margin: 2%;
-    float: left; 
-    text-align: center;
-    align-content: center;
-} */
+.play-again{
+    margin: 1rem;
+    font-size: 1.2rem;
+    background-color: #FFBFBB;
+    height: 60px;
+    padding: 1rem;
+    border-color: #453131;
+    border-radius: 8px;
+}
