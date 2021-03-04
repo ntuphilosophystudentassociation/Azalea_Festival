@@ -1,3 +1,7 @@
+.question{
+    margin-bottom: 2%;
+}
+
 .word-card{
     font-size: 12pt;
     color: white;
@@ -32,8 +36,8 @@ p{
 
 .word-card-content{
     font-size: 12pt;
-    color: white;
-    background-color: #2879BE;
+    color: black;
+    background-color: #e3e3e3;
     border-radius: 12px;
     min-height:200px;
     margin: 2%;
@@ -59,16 +63,31 @@ p{
 
 
 .output{
-    margin: 0;
+    margin: 0 auto;
     width:90%;
     max-width: 90%;
+    text-align: center;
     }
 
 .output-hide{
     display: none;
-    }
+}
     
 
 .game-zone-hide{
     display: none;
 }
+
+/* .play-again{
+    font-size: 12pt;
+    color: black;
+    background-color: #2879BE;
+    border: none;
+    border-radius: 12px;
+    vertical-align: top;
+    min-height:200px;
+    margin: 2%;
+    float: left; 
+    text-align: center;
+    align-content: center;
+} */

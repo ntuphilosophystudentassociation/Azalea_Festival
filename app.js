@@ -33,7 +33,7 @@ gameZone.addEventListener('click', (e)=>{
             }
         }else if (pConClickCount ===3){
             gameZone.classList.toggle('game-zone-hide')
-            pOutput.classList.toggle('outputHide')
+            pOutput.classList.toggle('output-hide')
         }else if (aConClickCount ===3){
             gameZone.classList.toggle('game-zone-hide')
             aOutput.classList.toggle('output-hide')
