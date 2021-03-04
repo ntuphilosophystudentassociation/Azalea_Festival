@@ -1,0 +1,69 @@
+.word-card{
+    font-size: 12pt;
+    color: white;
+    background-color: #2879BE;
+    border: none;
+    border-radius: 12px;
+    vertical-align: top;
+    min-height:200px;
+    margin: 2%;
+    float: left; 
+    text-align: center;
+}
+
+.word-card:hover{
+    background-color: #303030;
+}
+
+
+h4{
+    margin: 2%;
+    padding: 0;
+}
+p{
+    margin: 5%;
+    padding: 0; 
+}
+
+.word-card-content{
+    font-size: 12pt;
+    color: white;
+    background-color: #2879BE;
+    border-radius: 12px;
+    min-height:200px;
+    margin: 2%;
+    float: left;
+    text-align: center;
+}
+
+.game-zone{
+    margin: 0;
+    width:90%;
+    max-width: 90%;
+    height: 100%;
+}
+
+
+.card-hide{
+    display: none;
+}
+
+.button-hide{
+    float:left;
+}
+
+
+.output{
+    margin: 0;
+    width:90%;
+    max-width: 90%;
+    }
+
+.output-hide{
+    display: none;
+    }
+    
+
+.game-zone-hide{
+    display: none;
+}

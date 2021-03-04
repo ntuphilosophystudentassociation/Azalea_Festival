@@ -1,10 +1,10 @@
-const wordCard = document.querySelectorAll('.wordCard');
-const wordCardContent = document.querySelectorAll('.wordCardContent');
-const gameZone = document.querySelector('.gameZone');
-const pOutput = document.querySelector('.pOutput');
-const aOutput = document.querySelector('.aOutput');
-const aPlayAgain = document.querySelector('.aPlayAgain')
-const pPlayAgain = document.querySelector('.pPlayAgain')
+const wordCard = document.querySelectorAll('.word-card');
+const wordCardContent = document.querySelectorAll('.word-card-content');
+const gameZone = document.querySelector('.game-zone');
+const pOutput = document.querySelector('.p-output');
+const aOutput = document.querySelector('.a-output');
+const aPlayAgain = document.querySelector('.a-play-again')
+const pPlayAgain = document.querySelector('.p-play-again')
 let pClickCount = 0;
 let pConClickCount = 0;
 let aClickCount = 0;
@@ -15,9 +15,9 @@ aOutput.style.height = gameZone.clientHeight
 pOutput.style.height = gameZone.clientHeight
 
 gameZone.addEventListener('click', (e)=>{
-    if (e.target.tagName === 'BUTTON'){
-        e.target.classList.toggle('cardHide');
-        e.target.nextElementSibling.classList.toggle('cardHide');
+    if (e.target.classList.contains('word-card')){
+        e.target.classList.toggle('card-hide');
+        e.target.nextElementSibling.classList.toggle('card-hide');
         if (e.target.classList.contains('anthropology')){
             aClickCount ++
             aConClickCount ++
@@ -29,18 +29,18 @@ gameZone.addEventListener('click', (e)=>{
         };
         let totalClickCount = pClickCount + aClickCount;
         if (totalClickCount === 5){
-            gameZone.classList.toggle('gameZoneHide')
+            gameZone.classList.toggle('game-zone-hide')
             if(pClickCount>aClickCount){
-                pOutput.classList.toggle('outputHide')
+                pOutput.classList.toggle('output-hide')
             } else{
-                aOutput.classList.toggle('outputHide')
+                aOutput.classList.toggle('output-hide')
             }
         }else if (pConClickCount ===3){
-            gameZone.classList.toggle('gameZoneHide')
+            gameZone.classList.toggle('game-zone-hide')
             pOutput.classList.toggle('outputHide')
         }else if (aConClickCount ===3){
-            gameZone.classList.toggle('gameZoneHide')
-            aOutput.classList.toggle('outputHide')
+            gameZone.classList.toggle('game-zone-hide')
+            aOutput.classList.toggle('output-hide')
         };
     } 
     // else if(e.target.classList.contains('wordCardContent')){
@@ -54,12 +54,12 @@ aPlayAgain.addEventListener('click',()=>{
     pClickCount = 0;
     aConClickCount = 0;
     aClickCount = 0;
-    gameZone.classList.toggle('gameZoneHide');
-    aOutput.classList.add('outputHide');
-    pOutput.classList.add('outputHide');
+    gameZone.classList.toggle('game-zone-hide');
+    aOutput.classList.add('output-hide');
+    pOutput.classList.add('output-hide');
     for(i in wordCard){
-        wordCard[i].classList.remove('cardHide')
-        wordCardContent[i].classList.add('cardHide')
+        wordCard[i].classList.remove('card-hide')
+        wordCardContent[i].classList.add('card-hide')
     }
 })
 
@@ -68,11 +68,11 @@ pPlayAgain.addEventListener('click',()=>{
     pClickCount = 0;
     aConClickCount = 0;
     aClickCount = 0;
-    gameZone.classList.toggle('gameZoneHide');
-    aOutput.classList.add('outputHide');
-    pOutput.classList.add('outputHide');
+    gameZone.classList.toggle('game-zone-hide');
+    aOutput.classList.add('output-hide');
+    pOutput.classList.add('output-hide');
     for(i in wordCard){
-        wordCard[i].classList.remove('cardHide')
-        wordCardContent[i].classList.add('cardHide')
+        wordCard[i].classList.remove('card-hide')
+        wordCardContent[i].classList.add('card-hide')
     }
 })
