@@ -49,7 +49,7 @@ gameZone.addEventListener('click', (e)=>{
                 aOutput.classList.toggle('output-hide')
                 for (let i = 0; i < 5; i++){
                     aOutputRow.appendChild(newElements[i])
-                }}},2500)
+                }}},0)
         }else if (pConClickCount ===3){
             setTimeout(()=>{
             window.scrollTo(0,0)
@@ -58,7 +58,7 @@ gameZone.addEventListener('click', (e)=>{
             for (let i = 0; i < 3; i++){
                     console.log(pOutputRow)
                     pOutputRow.appendChild(newElements[i])
-                }},2500)
+                }},0)
         }else if (aConClickCount ===3){
             setTimeout(()=>{
             window.scrollTo(0,0)
@@ -66,7 +66,7 @@ gameZone.addEventListener('click', (e)=>{
             aOutput.classList.toggle('output-hide')
             for (let i = 0; i < 3; i++){
                     aOutputRow.appendChild(newElements[i])
-                }},2500)
+                }},0)
         };
     }
 }
